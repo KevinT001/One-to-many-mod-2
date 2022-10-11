@@ -1,0 +1,8 @@
+<h1> All Lakes </h1>
+<hr>
+<% @lakes.each do |lake| %>
+<p>Name: <%= lake.name %></p>
+<ul>Max Depth: <%= lake.max_depth %></ul>
+<ul>Allows Public Fishing: <%= lake.allows_public_fishing %></ul>
+<% end %>
+<br>

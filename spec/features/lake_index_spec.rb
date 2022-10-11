@@ -9,14 +9,17 @@ RSpec.describe 'It-1 us-1' do
   describe 'parent index' do 
     it 'for each parent table, as a visitor, when I visit /parents, I see the name of each parent record in the system' do 
 
-      visit '/lakes/'
-
+      visit '/lakes'
+      
       expect(page).to have_content("Name: Magikarp Lake")
       expect(page).to have_content("Max Depth: 100")
-      expect(page).to have_content("Allows Public Fishing: True")
-
-      expect(page).to_not have_content("#{@lake4.name}")
-      
+      expect(page).to have_content("Allows Public Fishing: true")
+      expect(page).to have_content("Name: Mafia Lake")
+      expect(page).to have_content("Max Depth: 200")
+      expect(page).to have_content("Allows Public Fishing: false")
+      expect(page).to have_content("Name: Oyster Lake")
+      expect(page).to have_content("Max Depth: 300")
+      expect(page).to have_content("Allows Public Fishing: true")
     end
   end
 end
