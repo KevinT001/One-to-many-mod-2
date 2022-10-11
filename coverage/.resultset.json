@@ -268,6 +268,35 @@
           null
         ]
       },
+      "/Users/kevinta/02module/projects/pr_1/relational_project/spec/features/lake_index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/kevinta/02module/projects/pr_1/relational_project/spec/features/lake_show_spec.rb": {
         "lines": [
           1,
@@ -314,6 +343,37 @@
           null
         ]
       },
+      "/Users/kevinta/02module/projects/pr_1/relational_project/app/models/fish.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/kevinta/02module/projects/pr_1/relational_project/app/controllers/fishes_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/kevinta/02module/projects/pr_1/relational_project/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
       "/Users/kevinta/02module/projects/pr_1/relational_project/app/controllers/lakes_controller.rb": {
         "lines": [
           1,
@@ -328,14 +388,8 @@
           null,
           null
         ]
-      },
-      "/Users/kevinta/02module/projects/pr_1/relational_project/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
       }
     },
-    "timestamp": 1665529335
+    "timestamp": 1665531244
   }
 }
