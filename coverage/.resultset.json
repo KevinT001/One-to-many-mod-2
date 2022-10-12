@@ -290,7 +290,6 @@
           1,
           null,
           1,
-          null,
           1,
           1,
           1,
@@ -351,6 +350,35 @@
           1,
           1,
           null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/kevinta/02module/projects/pr_1/relational_project/spec/features/lakes_fishes_index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
           null
@@ -419,8 +447,19 @@
           null,
           null
         ]
+      },
+      "/Users/kevinta/02module/projects/pr_1/relational_project/app/controllers/lakes_fishes_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1665533469
+    "timestamp": 1665535291
   }
 }
