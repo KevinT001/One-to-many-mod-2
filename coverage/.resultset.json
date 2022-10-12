@@ -268,6 +268,37 @@
           null
         ]
       },
+      "/Users/kevinta/02module/projects/pr_1/relational_project/spec/features/fish_show_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/kevinta/02module/projects/pr_1/relational_project/spec/features/lake_index_spec.rb": {
         "lines": [
           1,
@@ -363,7 +394,7 @@
           null,
           null,
           1,
-          0,
+          1,
           null,
           null
         ]
@@ -390,6 +421,6 @@
         ]
       }
     },
-    "timestamp": 1665531244
+    "timestamp": 1665533469
   }
 }
