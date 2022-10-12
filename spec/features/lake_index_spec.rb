@@ -27,7 +27,7 @@ RSpec.describe 'It-1 us-1' do
     it 'as visitor on lake index, I see that records are ordered by most recently created first' do 
 
       visit '/lakes'
-      save_and_open_page
+      
       expect(@lake3.name).to appear_before(@lake2.name)
       expect(@lake2.name).to appear_before(@lake1.name)
       expect(@lake1.name).to_not appear_before(@lake3.name)
