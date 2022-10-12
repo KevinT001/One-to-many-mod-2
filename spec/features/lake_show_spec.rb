@@ -30,5 +30,14 @@ RSpec.describe 'It-1 Us-2' do
       expect(page).to have_content("Num Of Fish Species: 2")
     end
 
+    it 'US 10: when I visit lake show page, I see a link to take me to the lakes fishes page' do 
+
+      visit "lakes/#{@lake1.id}"
+
+      expect(page).to have_link("Lakes Fish Species")
+      click_link("Lakes Fish Species")
+      expect(current_path).to eq("/lakes/#{@lake1.id}/fishes")
+    end
+
   end
 end
