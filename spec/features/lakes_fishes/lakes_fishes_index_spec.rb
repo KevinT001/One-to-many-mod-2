@@ -18,7 +18,7 @@ RSpec.describe 'It-1 us-5' do
       expect(page).to have_content("#{@fish1.catch_and_release_only}")
       expect(page).to have_content("#{@fish2.name}")
       expect(page).to have_content("#{@fish2.avg_length}")
-      expect(page).to have_content("#{@fish3.catch_and_release_only}")
+      expect(page).to_not have_content("#{@fish3.catch_and_release_only}")
       expect(page).to_not have_content("#{@fish3.name}")
     end
   end
