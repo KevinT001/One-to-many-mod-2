@@ -11,11 +11,18 @@ RSpec.describe 'Create new Lake: US 11' do
       end
 
       it 'I am taken to /parents/new where I see a form for a new lake' do 
-
         visit '/lakes'
         
-        click_link("Add New Lake")
+        click_link ("Add New Lake")
         expect(current_path).to eq('/lakes/new')
+
+        fill_in ('name'), with:("New Lake")
+        fill_in ("Max Depth"), with: (20)
+        choose ('Allows Public Fishing')
+        
+        click_button("Add Lake")
+        expect(current_path).to eq('/lakes')
+        
       end
     end
   end
