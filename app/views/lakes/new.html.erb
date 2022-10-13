@@ -1,0 +1,17 @@
+<h1>Create New Lake Form </h1>
+
+<%= form_with url:'/lakes', method: :post, local: true do |form| %>
+  
+<%= form.label :name, 'Lake Name' %>
+<%= form.text_field :name %>
+<br>
+<%= form.label :max_depth, "Max Depth" %>
+<%= form.number_field :max_depth %>
+<br>
+<%= form.label :allows_public_fishing, "Allows Public Fishing", value: true%>
+<%= form.radio_button :reservation_required, true %>
+<%= form.label :allows_public_fishing, "Does Not Allow Public Fishing", value: false%>
+<%= form.radio_button :allows_public_fishing, false %>
+<br>
+<%= form.submit "Add Lake"%>
+<% end %>
