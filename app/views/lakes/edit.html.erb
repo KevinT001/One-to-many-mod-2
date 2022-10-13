@@ -1,6 +1,6 @@
-<h1>Create New Lake Form </h1>
+<h1>Edit Lake Form </h1>
 
-<%= form_with url:'/lakes', method: :post, local: true do |form| %>
+<%= form_with url:"/lakes/#{@lake.id}", method: :patch, local: true do |form| %>
   
 <%= form.label :name, "Lake Name" %>
 <%= form.text_field :name %>
@@ -13,5 +13,5 @@
 <%= form.label :allows_public_fishing, "Does Not Allow Public Fishing", value: false%>
 <%= form.radio_button :allows_public_fishing, false %>
 <br>
-<%= form.submit "Add Lake"%>
+<%= form.submit "Submit"%>
 <% end %>

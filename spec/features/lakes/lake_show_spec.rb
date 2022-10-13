@@ -38,6 +38,5 @@ RSpec.describe 'It-1 Us-2' do
       click_link("Lakes Fish Species")
       expect(current_path).to eq("/lakes/#{@lake1.id}/fishes")
     end
-
   end
 end
