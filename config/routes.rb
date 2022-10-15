@@ -21,5 +21,6 @@ Rails.application.routes.draw do
   get '/fishes/:id/edit', to: 'fishes#edit'
   patch '/fishes/:id', to: 'fishes#update'
   get '/fishes/:id', to: 'fishes#show'
+  delete '/fishes/:id', to: "fishes#destroy"
 
 end
