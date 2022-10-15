@@ -27,6 +27,12 @@ class LakesController < ApplicationController
     redirect_to "/lakes/#{lake.id}"
   end
 
+  def destroy 
+    Lake.find(params[:id]).destroy
+    
+    redirect_to("/lakes")
+  end
+
   private
 
   def lake_params

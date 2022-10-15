@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get '/lakes/:id/edit', to: 'lakes#edit'
   patch '/lakes/:id', to: 'lakes#update'
   get '/lakes/:id', to: 'lakes#show'
+  delete '/lakes/:id/', to: 'lakes#destroy'
   
   
   get '/lakes/:id/fishes/new', to: 'lakes_fishes#new'
