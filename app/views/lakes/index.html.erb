@@ -7,9 +7,8 @@
   <ul><strong>Max Depth:</strong> <%= lake.max_depth %></ul>
   <ul><strong>Allows Public Fishing:</strong> <%= lake.allows_public_fishing %></ul>
   <ul><strong>Created At:</strong> <%= lake.created_at %> </ul>
-  <ul><%= link_to "Edit Lake Information", "/lakes/#{lake.id}/edit"%></ul>
+  <ul><%= link_to "Edit #{lake.name}", "/lakes/#{lake.id}/edit"%></ul>
 <% end %>
 
-<%= link_to "Add New Lake", "/lakes/new/" %>
+<%= link_to "Add New Lake", "/lakes/new" %>
 
-<br>

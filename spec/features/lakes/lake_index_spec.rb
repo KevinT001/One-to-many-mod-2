@@ -49,7 +49,7 @@ RSpec.describe 'It-1 us-1' do
 
         visit '/lakes'
 
-        expect(page).to have_link("Edit Lake information")
+        expect(page).to have_link("Edit #{@lake1.name}")
       end
     end
   end

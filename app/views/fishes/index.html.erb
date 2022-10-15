@@ -10,4 +10,5 @@
   <p><strong>Name:</strong> <%= fish.name %></p>
   <p><strong>Average Length(inches):</strong> <%= fish.avg_length %></p>
   <p><strong>Catch And Release Only?:</strong> <%= fish.catch_and_release_only%></p>
+  <p><%= link_to "Edit #{fish.name}", "/fishes/#{fish.id}/edit"%></p>
 <% end %>
