@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-10-14T23:03:16-06:00">2022-10-14T23:03:16-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-10-14T23:44:33-06:00">2022-10-14T23:44:33-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -39,12 +39,12 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>32</b> files in total.
+    <b>33</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>363</b> relevant lines,
-    <span class="green"><b>363</b> lines covered</span> and
+    <b>384</b> relevant lines,
+    <span class="green"><b>384</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -95,11 +95,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#6a27f22b9c07c8b5cd706fc527314dbf736d2873" class="src_link" title="app/controllers/lakes_controller.rb">app/controllers/lakes_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">35</td>
-            <td class="cell--number">19</td>
-            <td class="cell--number">19</td>
+            <td class="cell--number">41</td>
+            <td class="cell--number">22</td>
+            <td class="cell--number">22</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.68</td>
+            <td class="cell--number">1.73</td>
             
           </tr>
         
@@ -154,7 +154,7 @@
             <td class="cell--number">9</td>
             <td class="cell--number">9</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.44</td>
+            <td class="cell--number">2.78</td>
             
           </tr>
         
@@ -304,9 +304,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#95c2f523664e641fffaee7297c04b4493e628994" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">24</td>
-            <td class="cell--number">15</td>
-            <td class="cell--number">15</td>
+            <td class="cell--number">25</td>
+            <td class="cell--number">16</td>
+            <td class="cell--number">16</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -331,6 +331,17 @@
             <td class="cell--number">21</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.29</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#4d6984e3ee911321aec969717912ecb4ab367959" class="src_link" title="spec/features/lakes/delete_spec.rb">spec/features/lakes/delete_spec.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">29</td>
+            <td class="cell--number">17</td>
+            <td class="cell--number">17</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.35</td>
             
           </tr>
         
@@ -867,8 +878,8 @@
     
 
     <div class="t-line-summary">
-      <b>19</b> relevant lines.
-      <span class="green"><b>19</b> lines covered</span> and
+      <b>22</b> relevant lines.
+      <span class="green"><b>22</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -913,8 +924,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="7" data-linenumber="4">
-            <span class="hits">7</span>
+          <li class="covered" data-hits="8" data-linenumber="4">
+            <span class="hits">8</span>
             
 
             
@@ -957,8 +968,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="8">
-            <span class="hits">6</span>
+          <li class="covered" data-hits="8" data-linenumber="8">
+            <span class="hits">8</span>
             
 
             
@@ -1205,40 +1216,40 @@
 
             
 
-            <code class="ruby">  private</code>
+            <code class="ruby">  def destroy </code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="31">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="32">
+          <li class="covered" data-hits="1" data-linenumber="31">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  def lake_params</code>
+            <code class="ruby">    Lake.find(params[:id]).destroy</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="33">
-            <span class="hits">2</span>
+          <li class="never" data-hits="" data-linenumber="32">
+            
             
 
             
 
-            <code class="ruby">    params.permit(:name, :max_depth, :allows_public_fishing, :lake_id)</code>
+            <code class="ruby">    </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="33">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    redirect_to(&quot;/lakes&quot;)</code>
           </li>
         </div>
       
@@ -1255,6 +1266,72 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="35">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="36">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  private</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="37">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="38">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def lake_params</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="39">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    params.permit(:name, :max_depth, :allows_public_fishing, :lake_id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="40">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="41">
             
             
 
@@ -2036,8 +2113,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="8" data-linenumber="8">
-            <span class="hits">8</span>
+          <li class="covered" data-hits="9" data-linenumber="8">
+            <span class="hits">9</span>
             
 
             
@@ -2080,8 +2157,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="7" data-linenumber="12">
-            <span class="hits">7</span>
+          <li class="covered" data-hits="9" data-linenumber="12">
+            <span class="hits">9</span>
             
 
             
@@ -4657,8 +4734,8 @@
     
 
     <div class="t-line-summary">
-      <b>15</b> relevant lines.
-      <span class="green"><b>15</b> lines covered</span> and
+      <b>16</b> relevant lines.
+      <span class="green"><b>16</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -4769,13 +4846,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="10">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">  </code>
+            
+
+            <code class="ruby">  delete &#39;/lakes/:id/&#39;, to: &#39;lakes#destroy&#39;</code>
           </li>
         </div>
       
@@ -4791,13 +4868,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="12">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="12">
+            
             
 
             
 
-            <code class="ruby">  get &#39;/lakes/:id/fishes/new&#39;, to: &#39;lakes_fishes#new&#39;</code>
+            <code class="ruby">  </code>
           </li>
         </div>
       
@@ -4808,7 +4885,7 @@
 
             
 
-            <code class="ruby">  get &#39;/lakes/:id/fishes&#39;, to: &#39;lakes_fishes#index&#39;</code>
+            <code class="ruby">  get &#39;/lakes/:id/fishes/new&#39;, to: &#39;lakes_fishes#new&#39;</code>
           </li>
         </div>
       
@@ -4819,18 +4896,18 @@
 
             
 
-            <code class="ruby">  post &#39;lakes/:id/fishes&#39;, to: &#39;lakes_fishes#create&#39;</code>
+            <code class="ruby">  get &#39;/lakes/:id/fishes&#39;, to: &#39;lakes_fishes#index&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="15">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="15">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">  post &#39;lakes/:id/fishes&#39;, to: &#39;lakes_fishes#create&#39;</code>
           </li>
         </div>
       
@@ -4841,7 +4918,7 @@
 
             
 
-            <code class="ruby">  # get &#39;/lakes/:id/fishes/sort&#39;, to: &#39;lakes_fishes#sort&#39;</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -4852,7 +4929,7 @@
 
             
 
-            <code class="ruby">  </code>
+            <code class="ruby">  # get &#39;/lakes/:id/fishes/sort&#39;, to: &#39;lakes_fishes#sort&#39;</code>
           </li>
         </div>
       
@@ -4868,13 +4945,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="19">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="19">
+            
             
 
             
 
-            <code class="ruby">  get &#39;/fishes&#39;, to: &#39;fishes#index&#39;</code>
+            <code class="ruby">  </code>
           </li>
         </div>
       
@@ -4885,7 +4962,7 @@
 
             
 
-            <code class="ruby">  get &#39;/fishes/:id/edit&#39;, to: &#39;fishes#edit&#39;</code>
+            <code class="ruby">  get &#39;/fishes&#39;, to: &#39;fishes#index&#39;</code>
           </li>
         </div>
       
@@ -4896,7 +4973,7 @@
 
             
 
-            <code class="ruby">  patch &#39;/fishes/:id&#39;, to: &#39;fishes#update&#39;</code>
+            <code class="ruby">  get &#39;/fishes/:id/edit&#39;, to: &#39;fishes#edit&#39;</code>
           </li>
         </div>
       
@@ -4907,12 +4984,23 @@
 
             
 
+            <code class="ruby">  patch &#39;/fishes/:id&#39;, to: &#39;fishes#update&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="23">
+            <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">  get &#39;/fishes/:id&#39;, to: &#39;fishes#show&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="23">
+          <li class="never" data-hits="" data-linenumber="24">
             
             
 
@@ -4923,7 +5011,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="24">
+          <li class="never" data-hits="" data-linenumber="25">
             
             
 
@@ -5888,6 +5976,356 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="35">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="4d6984e3ee911321aec969717912ecb4ab367959">
+  <div class="header">
+    <h3>spec/features/lakes/delete_spec.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>17</b> relevant lines.
+      <span class="green"><b>17</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;rails_helper&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">RSpec.describe &#39;Delete Lake&#39; do </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">   before :each do </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="5">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    @lake1 = Lake.create!(name: &quot;Magikarp Lake&quot;, max_depth: 100, allows_public_fishing: true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="6">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    @lake2 = Lake.create!(name: &quot;Mafia Lake&quot;, max_depth: 200, allows_public_fishing: false)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="7">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    @lake3 = Lake.create!(name: &quot;Oyster Lake&quot;, max_depth: 300, allows_public_fishing: true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="8">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    @fish1 = @lake1.fishes.create!(name: &quot;Magikarp&quot;, avg_length: 35, catch_and_release_only: false)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="9">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    @fish2 = @lake1.fishes.create!(name: &quot;Gyrados&quot;, avg_length: 234, catch_and_release_only: true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="10">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    @fish3 = @lake2.fishes.create!(name: &quot;Blob-Fish&quot;, avg_length: 11, catch_and_release_only: true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  describe &#39;parent show page delete&#39; do </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="14">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &#39;When I visit Lake show page, I see a link to delete the parents&#39; do </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="16">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      visit &quot;/lakes/#{@lake1.id}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="18">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(page).to have_link(&quot;Delete #{@lake1.name}&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="19">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="21">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &#39;I click the link to delete lake, and request is sent to /lakes/:id  lake is deleted&#39; do </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="22">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="23">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      visit &quot;/lakes/#{@lake1.id}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="24">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="25">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      click_link(&quot;Delete #{@lake1.name}&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="26">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(current_path).to eq(&quot;/lakes&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="27">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="28">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="29">
             
             
 

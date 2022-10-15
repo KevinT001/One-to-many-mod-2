@@ -11,5 +11,5 @@
 <ul>Num Of Fish Species: <%= @lake.fishes_count %> <ul>
 <p><%= link_to "Lakes Fish Species", "/lakes/#{@lake.id}/fishes" %></p>
 <p><%= link_to "Edit Lake Information", "/lakes/#{@lake.id}/edit"%></p>
-
+<p><%= link_to "Delete #{@lake.name}", "/lakes/#{@lake.id}", method: :delete %></p>
 </body>
