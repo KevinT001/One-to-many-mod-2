@@ -1,12 +1,15 @@
-<h1> All Lakes </h1>
+<h1 style="color:red;"> 🌊All Lakes🌊 </h1>
+<img src = "https://i.redd.it/rr0zadfpf6b61.jpg" width="400" height= "200">
 <hr>
+
 <% @lakes.each do |lake| %>
-  <p><strong>Name: <%= lake.name %></strong></p>
-  <ul>Max Depth: <%= lake.max_depth %></ul>
-  <ul>Allows Public Fishing: <%= lake.allows_public_fishing %></ul>
-  <ul>Created At: <%= lake.created_at %> </ul>
+  <p><strong>Name:</strong> <%= lake.name %></p>
+  <ul><strong>Max Depth:</strong> <%= lake.max_depth %></ul>
+  <ul><strong>Allows Public Fishing:</strong> <%= lake.allows_public_fishing %></ul>
+  <ul><strong>Created At:</strong> <%= lake.created_at %> </ul>
+  <ul><%= link_to "Edit Lake Information", "/lakes/#{lake.id}/edit"%></ul>
 <% end %>
 
-<%= link_to "Add New Lake", "/lakes/new" %>
+<%= link_to "Add New Lake", "/lakes/new/" %>
 
 <br>

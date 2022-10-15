@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   get '/lakes/:id/fishes', to: 'lakes_fishes#index'
   post 'lakes/:id/fishes', to: 'lakes_fishes#create'
 
-  get '/lakes/:id/fishes/sort', to: 'lakes_fishes#sort'
+  # get '/lakes/:id/fishes/sort', to: 'lakes_fishes#sort'
   
   
   get '/fishes', to: 'fishes#index'

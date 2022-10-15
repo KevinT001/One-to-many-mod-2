@@ -37,4 +37,18 @@ RSpec.describe 'It-1 us-5' do
       end
     end
   end
+
+  describe 'It-2 US 16' do 
+    describe 'Link to alphabetize fish on lake fish index page' do 
+
+      it 'Has a link that when clicked will alphabetize the items on index page' do 
+
+        visit "/lakes/#{@lake1.id}/fishes"
+
+        expect(page).to have_link("Sort Fish Alphabetically")
+        click_link("Sort Fish Alphabetically")
+        expect(current_path).to eq("/lakes/#{@lake1.id}/fishes")
+      end
+    end
+  end
 end
