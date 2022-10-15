@@ -23,4 +23,15 @@ RSpec.describe 'It-3-20' do
       end
     end
   end
+  describe 'Fish index page delete' do
+    it 'When I visit Fish index page, I see a link to delete a Fish. When Clicked, fish is deleted and reroutes back to index page' do 
+      visit "/fishes"
+
+      expect(page).to have_link("Delete #{@fish1.name}")
+      click_link("Delete #{@fish1.name}")
+      expect(current_path).to eq("/fishes")
+      expect(page).to_not have_content("#{@fish1.name}")
+
+    end
+  end
 end

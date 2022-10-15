@@ -8,6 +8,7 @@
   <ul><strong>Allows Public Fishing:</strong> <%= lake.allows_public_fishing %></ul>
   <ul><strong>Created At:</strong> <%= lake.created_at %> </ul>
   <ul><%= link_to "Edit #{lake.name}", "/lakes/#{lake.id}/edit"%></ul>
+  <ul><%= link_to "Delete #{lake.name}", "/lakes/#{lake.id}", method: :delete %></ul>
 <% end %>
 
 <%= link_to "Add New Lake", "/lakes/new" %>
