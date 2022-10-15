@@ -6,4 +6,6 @@
   <p>Catch And Release Only?: <%= fish.catch_and_release_only%></p>
 <% end %>
 
-<%= link_to "Add New Fish", "/lakes/:id/fishes/new" %>
+<%= link_to "Add New Fish", "/lakes/#{@lakes.id}/fishes/new" %>
+
+<%= link_to "Sort Fish Alphabetically", "/lakes/#{@lakes.id}/fishes/sort"%>

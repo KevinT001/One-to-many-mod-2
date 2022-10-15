@@ -31,7 +31,7 @@ RSpec.describe 'It-1 us-5' do
 
           expect(page).to have_link("Add New Fish")
           click_link("Add New Fish")
-          expect(current_path).to eq("/lakes/:id/fishes/new")
+          expect(current_path).to eq("/lakes/#{@lake1.id}/fishes/new")
 
         end
       end

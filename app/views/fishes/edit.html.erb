@@ -1,0 +1,17 @@
+<h1>Fish Edit Form </h1>
+
+<%= form_with url:"/fishes/#{@fish.id}", method: :patch, local: true do |form| %>
+  
+<%= form.label :name, "Fish Name" %>
+<%= form.text_field :name %>
+<br>
+<%= form.label :avg_length, "Average Length(inches)" %>
+<%= form.number_field :avg_length %>
+<br>
+<%= form.label :catch_and_release_only , "Catch and Release Only(True)", value: true%>
+<%= form.radio_button :catch_and_release_only, true %>
+<%= form.label :catch_and_release_only, "Catch and Release Only(False)", value: false%>
+<%= form.radio_button :catch_and_release_only, false %>
+<br>
+<%= form.submit "Submit"%>
+<% end %>
