@@ -18,8 +18,23 @@ RSpec.describe 'It-1 us-5' do
       expect(page).to have_content("#{@fish1.catch_and_release_only}")
       expect(page).to have_content("#{@fish2.name}")
       expect(page).to have_content("#{@fish2.avg_length}")
-      expect(page).to_not have_content("#{@fish3.catch_and_release_only}")
-      expect(page).to_not have_content("#{@fish3.name}")
+    
+    end
+  end
+
+  describe 'IT-2 US 13' do 
+    describe 'Add new Lake-fish item to index page' do 
+      describe 'Link to form to add new item' do 
+        it 'Has a link to add a new adoptable child to'do 
+
+          visit "/lakes/#{@lake1.id}/fishes"
+
+          expect(page).to have_link("Add New Fish")
+          click_link("Add New Fish")
+          expect(current_path).to eq("/lakes/#{@lake1.id}/fishes/new")
+
+        end
+      end
     end
   end
 end

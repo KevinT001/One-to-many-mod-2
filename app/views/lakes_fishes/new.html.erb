@@ -1,0 +1,17 @@
+<h1> Add New Fish Form </h1>
+
+<%= form_with url: "/lakes/#{@lake.id}/fishes", method: :post, local: true do |form| %>
+  
+<%= form.label :name, "Fish Name" %>
+<%= form.text_field :name %>
+<br>
+<%= form.label :avg_length, "Average Length(inches)" %>
+<%= form.number_field :avg_length %>
+<br>
+<%= form.label :catch_and_release_only, "Catch & Release:True", value: true%>
+<%= form.radio_button :catch_and_release_only, true %>
+<%= form.label :catch_and_release_only, "Catch & Release:False", value: false%>
+<%= form.radio_button :catch_and_release_only, false %>
+<br>
+<%= form.submit "Submit"%>
+<% end %>

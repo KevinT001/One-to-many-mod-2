@@ -262,6 +262,14 @@
           1,
           1,
           null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -284,7 +292,7 @@
           null,
           null,
           1,
-          3,
+          0,
           null,
           null,
           null
@@ -304,10 +312,11 @@
           1,
           1,
           1,
+          null,
           null
         ]
       },
-      "/Users/kevinta/02module/projects/pr_1/relational_project/app/controllers/lakes_controller.rb": {
+      "/Users/kevinta/02module/projects/pr_1/relational_project/app/controllers/fishes_controller.rb": {
         "lines": [
           1,
           null,
@@ -315,20 +324,13 @@
           0,
           null,
           null,
+          null,
           1,
-          3,
-          null,
-          null,
           1,
           null,
           null,
           1,
-          0,
-          0,
-          null,
-          null,
           1,
-          2,
           null,
           null,
           1,
@@ -336,6 +338,7 @@
           1,
           1,
           1,
+          null,
           null,
           null,
           1,
@@ -353,6 +356,6 @@
         ]
       }
     },
-    "timestamp": 1665701849
+    "timestamp": 1665795149
   }
 }
