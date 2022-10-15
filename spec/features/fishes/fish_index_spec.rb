@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'IT-1 US 3' do 
+RSpec.describe 'Index page' do 
 
   before :each do 
     @lake1 = Lake.create!(name: "Magikarp Lake", max_depth: 100, allows_public_fishing: true)
@@ -11,7 +11,7 @@ RSpec.describe 'IT-1 US 3' do
     @fish3 = @lake2.fishes.create!(name: "Blob-Fish", avg_length: 11, catch_and_release_only: true)
 
   end
-  describe 'Fishes index page' do 
+  describe 'Fishes index page It-1 US 3' do 
     it 'As visitor, when i visit /fishes   I see child in the system including the Childs attributes' do 
 
       visit "/fishes"
@@ -21,5 +21,14 @@ RSpec.describe 'IT-1 US 3' do
       expect(page).to have_content(@fish1.catch_and_release_only)
       expect(page).to_not have_content(@lake1.name)
     end
+  end
+
+  it 'I see a checkbox and update display button to only show records where boolean column is true' do 
+    visit '/fishes'
+
+    expect(page).to have_unchecked_field("catch_and_release_only")
+    page.check("catch_and_release_only")
+    click_button("Update Display")
+    expect(current_path).to eq('/fishes')
   end
 end

@@ -42,4 +42,16 @@ RSpec.describe 'It-1 us-1' do
       expect(page).to have_content(@lake3.created_at)
     end
   end 
+
+  describe 'It-2 Us-17' do 
+    describe 'Edit link on page' do 
+      it 'As visitor next to each Lake I see a link to edit the Lake info' do
+
+        visit '/lakes'
+
+        expect(page).to have_link("Edit Lake information")
+      end
+    end
+  end
+
 end

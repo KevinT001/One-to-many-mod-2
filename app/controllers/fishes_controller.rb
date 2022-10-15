@@ -1,7 +1,8 @@
 class FishesController < ApplicationController
 
   def index
-    @fishes = Fish.all 
+    @fishes = Fish.all
+    # .must_release 
 
   end
 

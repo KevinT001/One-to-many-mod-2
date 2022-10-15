@@ -2,7 +2,12 @@ class LakesFishesController < ApplicationController
 
   def index 
     @lakes = Lake.find(params[:id])
-    @fishes = @lakes.fishes
+    if params[:sort] == "1" # If `params` has a key or `sort` then we want to order by name
+      @fishes = @lakes.fishes.order(:name)
+    else # If not, just grab the fishes normally
+      @fishes = @lakes.fishes
+    end
+    
   end
 
   def new
@@ -16,12 +21,11 @@ class LakesFishesController < ApplicationController
     redirect_to "/lakes/#{@lake.id}/fishes"
   end
 
-  def sort 
-    @lakes = Lake.find(params[:id])
-    @fishes = @lakes.fishes.order(:name)
-    render "index"
-    
-  end
+  # def sort 
+  #   @lakes = Lake.find(params[:id])
+  #   @fishes = @lakes.fishes.order(:name)
+  #   render "index" 
+  # end
 
   private
   def lake_fish_params
