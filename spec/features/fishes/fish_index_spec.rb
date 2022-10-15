@@ -22,13 +22,26 @@ RSpec.describe 'Index page' do
       expect(page).to_not have_content(@lake1.name)
     end
   end
+  describe 'US 15' do
 
-  it 'I see a checkbox and update display button to only show records where boolean column is true' do 
-    visit '/fishes'
+    it 'I see a checkbox and update display button to only show records where boolean column is true' do 
+      visit '/fishes'
 
-    expect(page).to have_unchecked_field("catch_and_release_only")
-    page.check("catch_and_release_only")
-    click_button("Update Display")
-    expect(current_path).to eq('/fishes')
+      expect(page).to have_unchecked_field("catch_and_release_only")
+      page.check("catch_and_release_only")
+      click_button("Update Display")
+      expect(current_path).to eq('/fishes')
+    end
+  end
+
+  describe 'It-2 Us-18' do 
+    describe 'Edit link on page' do 
+      it 'As visitor next to each Fish I see a link to edit the Fish info' do
+
+        visit '/fishes'
+
+        expect(page).to have_link("Edit #{@fish1.name}")
+      end
+    end
   end
 end
