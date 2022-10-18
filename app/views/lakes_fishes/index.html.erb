@@ -1,10 +1,21 @@
-<h1> Known Fish In Lake </h1>
+<h1> 🐡Known Fish In Lake🐡 </h1>
 
 <% @fishes.each do |fish|%>
-  <p>Name: <%= fish.name %></p>
+  <p><strong>Name: <%= fish.name %></strong></p>
   <p>Average Length(inches): <%= fish.avg_length %></p>
   <p>Catch And Release Only?: <%= fish.catch_and_release_only%></p>
+  <hr>
 <% end %>
+
+<%= form_with url:"/lakes/#{@lakes.id}/fishes", method: :get, local: true do |form| %>
+  
+  <%= form.label :size, "Filter by size above:" %>
+  <%= form.text_field :size %>
+
+  <%= form.submit "Filter"%>
+<% end %>
+
+
 
 <%= link_to "Add New Fish", "/lakes/#{@lakes.id}/fishes/new" %>
 

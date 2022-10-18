@@ -11,5 +11,4 @@ class Lake < ApplicationRecord
   def fishes_count
     self.fishes.count
   end
-  
 end

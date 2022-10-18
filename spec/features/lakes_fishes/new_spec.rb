@@ -19,7 +19,7 @@ RSpec.describe 'It-2 US 13' do
 
       fill_in ('name'), with:("Fire Fish")
       fill_in ('Average Length(inches)'), with: (14)
-      # fill_in (id:), with:("")
+      
       choose ('Catch & Release:True')
         
       click_button("Submit")

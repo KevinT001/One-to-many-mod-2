@@ -2,6 +2,14 @@ class FishesController < ApplicationController
 
   def index
     @fishes = Fish.all
+
+    if params[:catch_and_release] == "on" 
+      @fishes = Fish.all.must_release
+
+    else 
+      @fishes = Fish.all
+    end
+
     # .must_release 
 
   end

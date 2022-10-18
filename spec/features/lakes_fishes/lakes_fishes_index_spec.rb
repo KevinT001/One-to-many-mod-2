@@ -51,4 +51,19 @@ RSpec.describe 'It-1 us-5' do
       end
     end
   end
+
+  describe 'It-2 US 21 ' do 
+    describe 'Display Records Over a given Threshold' do 
+      it 'I see a form that allows me to input a number value, i put a # in and hit submit, it only returns recoerds above that column, Im brought back to current index page' do 
+
+        visit "/lakes/#{@lake1.id}/fishes"
+
+        fill_in('Filter by size above', with: 50)
+        click_button("Filter")
+
+        expect(current_path).to eq("/lakes/#{@lake1.id}/fishes")
+        expect(page).to have_content(@fish2.name)
+      end
+    end
+  end
 end
