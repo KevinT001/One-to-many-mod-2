@@ -1,6 +1,19 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
+@lake1 = Lake.create!(name: "Magikarp Lake", max_depth: 100, allows_public_fishing: true)
+@lake2 = Lake.create!(name: "Mafia Lake", max_depth: 200, allows_public_fishing: false)
+@lake3 = Lake.create!(name: "Oyster Lake", max_depth: 300, allows_public_fishing: true)
+@fish1 = @lake1.fishes.create!(name: "Magikarp", avg_length: 35, catch_and_release_only: false)
+@fish2 = @lake1.fishes.create!(name: "Gyrados", avg_length: 234, catch_and_release_only: true)
+@fish3 = @lake2.fishes.create!(name: "Blob-Fish", avg_length: 11, catch_and_release_only: true)
+@fish4 = @lake2.fishes.create!(name: "Abdul-Fish", avg_length: 18, catch_and_relase_only: false)
+@fish5 = @lake2.fishes.create!(name: "Sean-Fish", avg_length: 28, catch_and_relase_only: true)
+@fish6 = @lake3.fishes.create!(name: "Corgi-Fish", avg_length: 38, catch_and_relase_only: false)
+@fish7 = @lake3.fishes.create!(name: "Gozilla-Fish", avg_length: 98, catch_and_relase_only: true)
+@fish8 = @lake3.fishes.create!(name: "Manta-ray", avg_length: 98, catch_and_relase_only: false)
+@fish9 = @lake3.fishes.create!(name: "Psyduck", avg_length:15, catch_and_relase_only: true)
+@fish10 = @lake2.fishes.create!(name: "KanyeWest", avg_length:28, catch_and_relase_only: false)
+@fish11 = @lake1.fishes.create!(name: "Golding", avg_length:14, catch_and_relase_only: true)
+@fish12 = @lake1.fishes.create!(name: "Seaking", avg_length:25, catch_and_relase_only: false)
+
 # Examples:
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
