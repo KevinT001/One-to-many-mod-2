@@ -27,8 +27,8 @@ RSpec.describe 'Index page' do
     it 'I see a checkbox and update display button to only show records where boolean column is true' do 
       visit '/fishes'
 
-      expect(page).to have_unchecked_field("catch_and_release_only")
-      page.check("catch_and_release_only")
+      expect(page).to have_unchecked_field("catch_and_release")
+      page.check("catch_and_release")
       click_button("Update Display")
       expect(current_path).to eq('/fishes')
     end

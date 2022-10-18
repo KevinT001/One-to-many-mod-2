@@ -4,6 +4,8 @@ class LakesFishesController < ApplicationController
     @lakes = Lake.find(params[:id])
     if params[:sort] == "1" # If `params` has a key or `sort` then we want to order by name
       @fishes = @lakes.fishes.order(:name)
+    elsif params[:size]             #this is refresh link for form on view page
+      @fishes= @lakes.fishes.where("avg_length > #{params[:size]}") 
     else # If not, just grab the fishes normally
       @fishes = @lakes.fishes
     end
