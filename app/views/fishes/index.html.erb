@@ -12,6 +12,10 @@
   <p><strong>Catch And Release Only?:</strong> <%= fish.catch_and_release_only%></p>
   <p>ID:<%= "#{fish.id}"%></p>
   <p><%= link_to "Edit #{fish.name}", "/fishes/#{fish.id}/edit"%></p>
+
   <p><%= link_to "More Information", "/fishes/#{fish.id}"%></p>
   <hr>
+
+  <p><%= link_to "Delete #{fish.name}", "/fishes/#{fish.id}", method: :delete %></p>
+
 <% end %>

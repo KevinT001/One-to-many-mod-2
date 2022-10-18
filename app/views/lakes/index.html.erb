@@ -4,13 +4,16 @@
 
 <% @lakes.each do |lake| %>
   <p><strong>Name:</strong> <%= lake.name %></p>
+
   <p><strong>Max Depth:</strong> <%= lake.max_depth %></p>
   <p><strong>Allows Public Fishing:</strong> <%= lake.allows_public_fishing %></p>
   <p><strong>Created At:</strong> <%= lake.created_at %> </p>
   <p>ID:<%= "#{lake.id}"%>
   <p><%= link_to "Edit #{lake.name}", "/lakes/#{lake.id}/edit"%></p>
+  <ul><%= link_to "Delete #{lake.name}", "/lakes/#{lake.id}", method: :delete %></ul>
   <p><%= link_to "More Information", "/lakes/#{lake.id}"%></p>
   <hr>
+
 <% end %>
 
 <%= link_to "Add New Lake", "/lakes/new" %>

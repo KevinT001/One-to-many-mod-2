@@ -26,4 +26,15 @@ RSpec.describe 'Delete Lake' do
       expect(current_path).to eq("/lakes")
     end
   end
+
+  describe 'parent index page delete' do
+    it 'When I visit Lake index page, I see a link to delete a Lake. When Clicked, lake is deleted and reroutes back to index page' do 
+      visit "/lakes"
+
+      expect(page).to have_link("Delete #{@lake1.name}")
+      click_link("Delete #{@lake1.name}")
+      expect(current_path).to eq("/lakes")
+      expect(page).to_not have_content("#{@lake1.name}")
+    end
+  end
 end

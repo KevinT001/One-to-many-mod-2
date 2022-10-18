@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get '/lakes/:id/edit', to: 'lakes#edit'
   patch '/lakes/:id', to: 'lakes#update'
   get '/lakes/:id', to: 'lakes#show'
+  delete '/lakes', to: 'lakes#destroy'
   delete '/lakes/:id/', to: 'lakes#destroy'
   
   
@@ -21,6 +22,7 @@ Rails.application.routes.draw do
   get '/fishes/:id/edit', to: 'fishes#edit'
   patch '/fishes/:id', to: 'fishes#update'
   get '/fishes/:id', to: 'fishes#show'
+  delete '/fishes', to: 'fishes#destroy'
   delete '/fishes/:id', to: "fishes#destroy"
 
 end
